@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>LP Desarrollo Web</title>
+</head>
+
+<body>
+
+    <!--Sección inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/LP/</h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobre-mi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Íconos del menú responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/ernesto-vilela-monetro-7960b6270/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ernech"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/ernechvm0509"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenido</p>
+                <h2>Soy <span>Ernesto Vilela Montero</span>, desarrollador de software</h2>
+                <p class="descripcion">Ingeniero de Sistemas</p>
+                <a href="#portfolio">Ir a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección sobre mi-->
+    <section id="sobre-mi">
+        <div class="contenedor-foto">
+            <img src="img/foto-digital.jpg" alt="">
+        </div>
+        <div class="sobre-mi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Ernesto Vilela</span></h2>
+            <h3>Fullstack developer</h3>
+            <p>Licenciado en la carrera de Ingeniería de Sistemas, de la Universidad Católica Boliviana "San Pablo" La
+                Paz-Bolivia</p>
+            <a class="cv" href="./assets/Currículum Viate Ernesto Vilela.pdf" download>Descargar CV</a>
+        </div>
+
+    </section>
+
+    <!--Sección Servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo frontend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML y CSS</li>
+                    <li>Consumo de REST API</li>
+                    <li>Manejo de estado de componentes (Redux y Pinia)</li>
+                </ul>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ut quis eveniet sequi mollitia
+                    ratione veritatis id vitae! Aspernatur beatae nisi minima explicabo ratione velit sed culpa iste
+                    sint optio?</p> -->
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo backend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Creación de servidores REST API</li>
+                    <li>Autenticación y autorización</li>
+                    <li>Uso de ORMs</li>
+                    <li>Bases de datos relacionales</li>
+                    <li>Bases de datos no relacionales</li>
+                </ul>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ut quis eveniet sequi mollitia
+                    ratione veritatis id vitae! Aspernatur beatae nisi minima explicabo ratione velit sed culpa iste
+                    sint optio?</p> -->
+            </div>
+            <!-- <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo de aplicaciones móviles</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Android nativo</li>
+                    <li>Desarrollo híbrido (Flutter)</li>
+                </ul>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ut quis eveniet sequi mollitia
+                    ratione veritatis id vitae! Aspernatur beatae nisi minima explicabo ratione velit sed culpa iste
+                    sint optio?</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!--Habilidades-->
+    <section id="skills" class="skills-container">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>React</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Vue JS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="vue" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Nest JS</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="nest" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Node JS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="node" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Portafolio-->
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto" id="pg-fr-candidate">
+                <div class="overlay"></div>
+                <img src="img/proyectos/Proyecto de grado frontend candidato.png">
+                <div class="info">
+                    <h4>Sistema de recursos humanos para la Universidad catíloca Boliviana (Vue js)</h4>
+                    <p>Proyecto de grado Frontend (candidato).</p>
+                </div>
+            </div>
+            <div class="proyecto" id="pg-frontend">
+                <div class="overlay"></div>
+                <img src="img/proyectos/Proyecto de grado frontend.png">
+                <div class="info">
+                    <h4>Sistema de recursos humanos para la Universidad catíloca Boliviana (Vue js)</h4>
+                    <p>Proyecto de grado Frontend (Reclutador).</p>
+                </div>
+
+            </div>
+            <div class="proyecto" id="medic-club-app">
+                <div class="overlay"></div>
+                <img src="img/proyectos/Medic club image.png">
+                <div class="info">
+                    <h4>Aplicación Medic club (Frontend)</h4>
+                    <p>Aplicación móvil elaborada con Flutter.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto" id="pg-backend">
+                <div class="overlay"></div>
+                <img src="img/proyectos/Proyecto de grado backend.png">
+                <div class="info">
+                    <h4>Sistema de recursos humanos para la Universidad catíloca Boliviana (NestJS)</h4>
+                    <p>Proyecto de grado Backend.</p>
+                </div>
+
+            </div>
+            <div class="proyecto" id="cofee-nestjs">
+                <div class="overlay"></div>
+                <img src="img/proyectos/REST server Nestjs.png">
+                <div class="info">
+                    <h4>Aplicación backend desarrolada con NestJS y MongoDB</h4>
+                    <p>Rest server NestJS</p>
+                </div>
+
+            </div>
+            <div class="proyecto" id="coffe-nodejs">
+                <div class="overlay"></div>
+                <img src="img/proyectos/Node js rest server.png">
+                <div class="info">
+                    <h4>Aplicación backen desarrolada con NodeJS y MongoDB</h4>
+                    <p>Rest server NodeJS</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactáctame ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/2b591b6190a92c28452ec2cec1162775" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad" name="name">
+                    <input type="text" placeholder="Dirección de email" class="input-mitad" name="email">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="subject">
+                </div>
+                <div class="fila">
+                    <textarea name="message" id="" cols="30" rows="10" class="input-full"
+                        placeholder="Tu mensaje..."></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+                <input type="hidden" name="_captcha" value="false" />
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <Footer>
+        <p>Todos los derechos resevados - 2022</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/ernesto-vilela-monetro-7960b6270/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Ernech"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/ernechvm0509"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </Footer>
+
+    <script src="scripts.js">
+
+    </script>
+
+</body>
+
+
+</html>
