@@ -57,8 +57,8 @@ pgFrontendCandidate.addEventListener('click',()=>redirectToGitHub("https://githu
 const pgFrontendReclutador = document.getElementById("pg-frontend");
 pgFrontendReclutador.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/proyecto-grado-web"));
 
-const medicClubApp = document.getElementById("medic-club-app");
-medicClubApp.addEventListener('click',()=>redirectToGitHub("https://github.com/ArielColqueH/MedicClub-Frontend"));
+const medicClubApp = document.getElementById("alternova-shop");
+medicClubApp.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/alternova-shop-react"));
 
 const pgBackend = document.getElementById("pg-backend");
 pgBackend.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/proyecto-grado-api"));
