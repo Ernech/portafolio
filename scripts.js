@@ -69,6 +69,9 @@ restServerNest.addEventListener('click',()=>redirectToGitHub("https://github.com
 const restServerNode = document.getElementById("coffe-nodejs");
 restServerNode.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/rest-server-nodejs"));
 
+const restServerNodeTs = document.getElementById("nodejs-ts-mysql");
+restServerNodeTs.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/anylist-node-ts"));
+
 
 function redirectToGitHub(url){
     window.open(url,"_blank");
