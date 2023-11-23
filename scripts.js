@@ -72,6 +72,9 @@ restServerNode.addEventListener('click',()=>redirectToGitHub("https://github.com
 const restServerNodeTs = document.getElementById("nodejs-ts-mysql");
 restServerNodeTs.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/anylist-node-ts"));
 
+const restServerNodeTsCA = document.getElementById("nodejs-ts-mongodb");
+restServerNodeTsCA.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/rest-server-nodejs-clean-architecture"));
+
 
 function redirectToGitHub(url){
     window.open(url,"_blank");
