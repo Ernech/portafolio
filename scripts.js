@@ -75,6 +75,10 @@ restServerNodeTs.addEventListener('click',()=>redirectToGitHub("https://github.c
 const restServerNodeTsCA = document.getElementById("nodejs-ts-mongodb");
 restServerNodeTsCA.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/rest-server-nodejs-clean-architecture"));
 
+const vueTanStackQuery = document.getElementById("vue-tanstack-ts");
+restServerNodeTsCA.addEventListener('click',()=>redirectToGitHub("https://github.com/Ernech/github-issues-app-vue"));
+
+
 
 function redirectToGitHub(url){
     window.open(url,"_blank");
